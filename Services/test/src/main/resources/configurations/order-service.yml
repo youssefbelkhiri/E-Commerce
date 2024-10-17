@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/product
+    username: root
+    password: password
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    database: postgresql
+server:
+  port: 8070
+application:
+  config:
+    customer-url: http://localhost:8222/api/v1/customers
+    product-url: http://localhost:8222/api/vi/products
+    payment-url: http://localhost:8222/api/v1/payments
